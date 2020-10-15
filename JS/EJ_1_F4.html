@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<title>EJ_1_F4</title>    
+</head>
+
+<body>
+    
+<script>
+
+    document.write("<h1>Fase4</h1>")
+    
+    var nom = "Xavi";
+    var cognom = "Gonzalez";
+    var cognom2 = "Navarro";
+    
+    var dia_naixement = 10;
+    var mes_naixement = 10;
+    var any_naixement = 1988;
+    
+    const any_traspas = 1948;
+    var cada_traspas = 4;
+    
+    
+    // Creeu una variable on juntareu el nom i els cognoms (tot en una variable) i un altre on juntareu la data de naixement separada 
+    // per “/” (tot en una variable). Mostreu per consola les variables del nom complet, la data de naixement 
+    var nom_final = nom + " " +cognom + " " + cognom2;
+    var data_final = dia_naixement + "/" + mes_naixement + "/" + any_naixement;	
+    
+    document.write("El meu nom és " + nom_final+ "</br>");
+    document.write("Vaig neixer el " + data_final+ "</br>");
+    
+    
+    // i si l’any de naixement es de traspàs o no.
+    var si_any_traspas = false;
+    var frase_si = "El meu any de naixement és de traspàs";
+	var	frase_no = "El meu any de naixement NO és de traspàs";
+	
+		for (var i=any_traspas; i <= any_naixement ; i+=cada_traspas) {
+			
+			if (i == any_naixement) {
+				si_any_traspas = true;
+			}
+		}
+		
+		if (si_any_traspas == true) {
+			document.write(frase_si);
+		}
+		
+		else {
+			document.write(frase_no);
+		}
+    
+    
+</script>    
+    
+</body>
+</html>

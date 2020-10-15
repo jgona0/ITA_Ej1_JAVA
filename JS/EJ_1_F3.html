@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<title>EJ_1_F3</title>    
+</head>
+
+<body>
+    
+<script>
+
+
+    var any_naixement = 1988;
+    
+    const ANY_TRASPAS = 1948;
+    var cada_traspas = 4;
+    
+    document.write("<h1>Fase3</h1>");
+    
+    document.write("Aquests son els anys de traspàs entre el " +ANY_TRASPAS+ " i el " +any_naixement+ ": </br>");
+
+    
+    // Partint de l’any 1948 heu de fer un bucle for i mostrar els anys de traspàs fins arriba al vostre any de naixement
+    // Creeu una variable bool que sera certa si l’any de naixement és de traspàs o falsa si no ho és
+    // En cas de que la variable bool sigui certa, heu de mostrar per consola una frase on ho digui, en cas de ser falsa mostrareu la frase pertinent. Creeu dues variables string per guardar les frases.
+    
+    var si_any_traspas = false;
+    var frase_si = "El meu any de naixement és de traspàs";
+	var	frase_no = "El meu any de naixement NO és de traspàs";
+	
+		for (var i=ANY_TRASPAS; i <= any_naixement ; i+=cada_traspas) {
+			
+			document.write(i + "</br>");
+			
+			if (i == any_naixement) {
+				si_any_traspas = true;
+			}
+		}
+		
+		if (si_any_traspas == true) {
+			document.write(frase_si);
+		}
+		
+		else {
+			document.write(frase_no);
+		}
+    
+    
+</script>    
+    
+</body>
+</html>
